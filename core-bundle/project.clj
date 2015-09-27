@@ -1,6 +1,6 @@
 (defproject logback-bundle/core-bundle "0.1.0-SNAPSHOT"
   :description "Core Logback dependencies bundle"
-  :url "http://example.com/FIXME"
+  :url "https://github.com/kumarshantanu/logback-bundle"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.codehaus.janino/janino     "2.7.8"]  ; for conditional config processing
