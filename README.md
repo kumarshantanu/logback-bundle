@@ -6,19 +6,24 @@ written in any JVM language can use this library.
 
 ## Usage
 
+You should use Logback via a log facade, e.g. [SLF4j](http://www.slf4j.org/) or
+a library that wraps SLF4j such as [Cambium](https://github.com/kumarshantanu/cambium),
+[clj-io/logging](https://github.com/clj-io/logging) etc.
+
+
 ### Maven coordinates
 
 Include the artifacts in your Leiningen/Gradle/SBT/Maven project.
 
-| Leiningen artifact                     | Description                                  | Clojars |
-|----------------------------------------|----------------------------------------------|---------|
-| `[logback-bundle/core-bundle "0.1.0"]` | Core Logback dependencies                    | https://clojars.org/logback-bundle/core-bundle |
-| `[logback-bundle/json-bundle "0.1.0"]` | Logback Core+JSON dependencies using Jackson | https://clojars.org/logback-bundle/json-bundle |
+| Leiningen artifact                     | Description                                  |
+|----------------------------------------|----------------------------------------------|
+| `[logback-bundle/core-bundle "0.1.0"]` | Core Logback dependencies                    |
+| `[logback-bundle/json-bundle "0.1.0"]` | Logback Core+JSON dependencies using Jackson |
 
+#### Clojars
 
-You should use Logback via a log facade, e.g. [SLF4j](http://www.slf4j.org/) or
-a library that wraps SLF4j such as [Cambium](https://github.com/kumarshantanu/cambium),
-[clj-io/logging](https://github.com/clj-io/logging) etc.
+Core-bundle: https://clojars.org/logback-bundle/core-bundle
+JSON-bundle: https://clojars.org/logback-bundle/json-bundle
 
 
 ### Quickstart (plain text logging)
