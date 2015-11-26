@@ -22,8 +22,8 @@ Include the artifacts in your Leiningen/Gradle/SBT/Maven project.
 
 #### Clojars
 
-Core-bundle: https://clojars.org/logback-bundle/core-bundle
-JSON-bundle: https://clojars.org/logback-bundle/json-bundle
+* Core-bundle: https://clojars.org/logback-bundle/core-bundle
+* JSON-bundle: https://clojars.org/logback-bundle/json-bundle
 
 
 ### Quickstart (plain text logging)
