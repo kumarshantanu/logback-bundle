@@ -10,14 +10,15 @@ written in any JVM language can use this library.
 
 Include the artifacts in your Leiningen/Gradle/SBT/Maven project.
 
-| Group ID       | Artifact ID | Description                                  | Clojars |
-|----------------|-------------|----------------------------------------------|---------|
-| logback-bundle | core-bundle | Core Logback dependencies                    | TBD     |
-| logback-bundle | json-bundle | Logback Core+JSON dependencies using Jackson | TBD     |
+| Leiningen artifact                     | Description                                  |
+|----------------------------------------|----------------------------------------------|
+| `[logback-bundle/core-bundle "0.1.0"]` | Core Logback dependencies                    |
+| `[logback-bundle/json-bundle "0.1.0"]` | Logback Core+JSON dependencies using Jackson |
 
 
 You should use Logback via a log facade, e.g. [SLF4j](http://www.slf4j.org/) or
-a library that wraps SLF4j such as [clj-io/logging](https://github.com/clj-io/logging).
+a library that wraps SLF4j such as [Cambium](https://github.com/kumarshantanu/cambium),
+[clj-io/logging](https://github.com/clj-io/logging) etc.
 
 
 ### Quickstart (plain text logging)
