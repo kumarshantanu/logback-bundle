@@ -1,20 +1,12 @@
 # Change Log
-All notable changes to this project will be documented in this file. This change
-log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
+All notable changes to this project will be documented in this file.
 
-## [Unreleased][unreleased]
-### Added
+## [0.2.0] - unreleased
+- Override log level at runtime  `logback_bundle.core.LevelOverrideFilter`
+
+
+## [0.1.0] - 2015-11-26
 - Core bundle
 - JSON bundle
 - Flat JSON layout
-
-<!--
-## 0.1.0 - 2015-09-26
-### Added
-- Files from the new template.
-- Widget maker public API - `make-widget-sync`.
-
-[unreleased]: https://github.com/your-name/logback-bundle/compare/0.1.1...HEAD
-[0.1.1]: https://github.com/your-name/logback-bundle/compare/0.1.0...0.1.1
--->
 
