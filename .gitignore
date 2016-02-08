@@ -9,3 +9,7 @@
 **/.nrepl-port
 .hgignore
 .hg/
+**/.classpath
+**/.project
+**/.settings
+
