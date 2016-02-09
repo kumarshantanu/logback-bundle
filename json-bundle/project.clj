@@ -12,8 +12,7 @@
   :javac-options ["-target" "1.7" "-source" "1.7" "-Xlint:-options"]
   :global-vars {*warn-on-reflection* true
                 *unchecked-math* :warn-on-boxed}
-  :profiles {:dev {:dependencies [[org.clojure/clojure       "1.7.0"]
-                                  [org.clojure/tools.logging "0.3.1"
-                                   :exclusions [org.clojure/clojure]]
-                                  [org.slf4j/slf4j-api       "1.7.12"]]}})
+  :profiles {:dev {:dependencies [[org.clojure/clojure "1.8.0"]
+                                  [cambium             "0.2.0"]
+                                  [org.slf4j/slf4j-api "1.7.12"]]}})
 
