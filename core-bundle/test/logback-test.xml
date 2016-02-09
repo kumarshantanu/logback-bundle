@@ -1,5 +1,13 @@
 <configuration debug="false">
 
+  <turboFilter class="logback_bundle.core.StrategyTurboFilter">
+    <name>mdcStrategy</name>
+  </turboFilter>
+
+  <turboFilter class="logback_bundle.core.StrategyTurboFilter">
+    <name>multiStrategy</name>
+  </turboFilter>
+
   <appender name="DUMMY" class="ch.qos.logback.core.ConsoleAppender">
     <!-- encoders are assigned the type
          ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
@@ -16,7 +24,7 @@
     </encoder>
   </appender>
 
-  <root level="debug">
+  <root level="info">
     <appender-ref ref="STDOUT" />
     <if condition='property("enable.dummy").equalsIgnoreCase("true")'>
       <then>
