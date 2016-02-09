@@ -11,7 +11,7 @@
   :global-vars {*warn-on-reflection* true
                 *unchecked-math* :warn-on-boxed}
   :profiles {:dev {:dependencies [[org.clojure/clojure "1.8.0"]
-                                  [cambium "0.2.0"]
+                                  [cambium             "0.2.0"]
                                   ;;[org.slf4j/slf4j-api "1.7.12"]
                                   ]
                    :jvm-opts ["-Denable.dummy=true"]}})
