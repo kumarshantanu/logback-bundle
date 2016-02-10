@@ -80,19 +80,18 @@ public class MultiLevelOverrideStrategy implements TurboFilterStrategy {
         if (match != null) {
             return match;
         }
-        Integer highestIntLevel = NO_LEVEL;
+        int matchRank = -1;
+        Integer matchIntegerLevel = NO_LEVEL;
         for (Map.Entry<String, Level> overridingLogger: overridingLogLevels.entrySet()) {
             final String partialLoggerName = overridingLogger.getKey();
             final Level overridingLevel = overridingLogger.getValue();
-            if (fullLoggerName.startsWith(partialLoggerName)) {
-                final Integer intLevel = overridingLevel.toInteger();
-                if (intLevel > highestIntLevel) {
-                    highestIntLevel = intLevel;
-                }
+            if (fullLoggerName.startsWith(partialLoggerName) && partialLoggerName.length() > matchRank) {
+                matchRank = partialLoggerName.length();
+                matchIntegerLevel = overridingLevel.toInteger();
             }
         }
-        cachedLoggerLevels.put(fullLoggerName, highestIntLevel);
-        return highestIntLevel;
+        cachedLoggerLevels.put(fullLoggerName, matchIntegerLevel);
+        return matchIntegerLevel;
     }
 
     @Override
