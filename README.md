@@ -3,6 +3,8 @@
 [Logback](http://logback.qos.ch/) dependencies gathered in one place. Projects
 written in any JVM language can use this library.
 
+Requires Java 7.
+
 
 ## Usage
 
@@ -17,8 +19,9 @@ Include the artifacts in your Leiningen/Gradle/SBT/Maven project.
 
 | Leiningen artifact                     | Description                                  |
 |----------------------------------------|----------------------------------------------|
-| `[logback-bundle/core-bundle "0.1.0"]` | Core Logback dependencies                    |
-| `[logback-bundle/json-bundle "0.1.0"]` | Logback Core+JSON dependencies using Jackson |
+| `[logback-bundle/core-bundle "0.2.0"]` | Core Logback dependencies                    |
+| `[logback-bundle/json-bundle "0.2.0"]` | Logback Core+JSON dependencies using Jackson |
+
 
 #### Clojars
 
@@ -88,14 +91,9 @@ replace `ch.qos.logback.contrib.json.classic.JsonLayout` with
 `logback_bundle.json.FlatJsonLayout`.
 
 
-## Development
-
-For development you need JDK 1.7 (or higher) and [Leiningen](http://leiningen.org/).
-
-
 ## License
 
-Copyright © 2015 Shantanu Kumar (kumar.shantanu@gmail.com, shantanu.kumar@concur.com)
+Copyright © 2015-2016 Shantanu Kumar (kumar.shantanu@gmail.com, shantanu.kumar@concur.com)
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
