@@ -3,7 +3,7 @@
   :url "https://github.com/kumarshantanu/logback-bundle"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[logback-bundle/core-bundle "0.2.0-SNAPSHOT"]
+  :dependencies [[logback-bundle/core-bundle "0.2.0"]
                  [com.fasterxml.jackson.core/jackson-core     "2.5.3"]  ; in use by cheshire 5.5.0
                  [com.fasterxml.jackson.core/jackson-databind "2.5.3"]  ; in use by cheshire 5.5.0
                  [ch.qos.logback.contrib/logback-json-classic "0.1.2"]
