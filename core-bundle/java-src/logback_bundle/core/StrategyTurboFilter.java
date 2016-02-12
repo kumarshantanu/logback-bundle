@@ -24,6 +24,14 @@ public class StrategyTurboFilter extends TurboFilter {
         return NAMED_FILTERS.get(filterName);
     }
 
+    public static TurboFilterStrategy getStrategy(String filterName) {
+        final StrategyTurboFilter filter = NAMED_FILTERS.get(filterName);
+        if (filter == null) {
+            throw new IllegalStateException(String.format("No such turbo filter found: '%s'", filterName));
+        }
+        return filter.strategy;
+    }
+
     public static void removeStrategy(String filterName) {
         setStrategy(filterName, null);
     }
