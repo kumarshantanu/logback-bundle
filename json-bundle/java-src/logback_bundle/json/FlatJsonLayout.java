@@ -19,6 +19,12 @@ public class FlatJsonLayout extends JsonLayout {
 
     private final ThrowableProxyConverter throwableProxyConverter;
 
+    private static volatile ValueDecoder decoder = ValueDecoder.NOP;
+
+    public static void setGlobalDecoder(ValueDecoder valueDecoder) {
+        decoder = valueDecoder;
+    }
+
     public FlatJsonLayout() {
         this.throwableProxyConverter = new ThrowableProxyConverter();
     }
@@ -55,8 +61,9 @@ public class FlatJsonLayout extends JsonLayout {
             Map<String, String> mdc = event.getMDCPropertyMap();
             if ((mdc != null) && !mdc.isEmpty()) {
                 // unlike the default JsonLayout, here we merge the MDC map into the top-level map
+                final ValueDecoder valueDecoder = decoder; // 'decoder' is volatile - avoid repetitive read by caching
                 for (final Entry<String, String> pair: mdc.entrySet()) {
-                    map.put(pair.getKey(), pair.getValue());
+                    map.put(pair.getKey(), valueDecoder.decode(pair.getValue()));
                 }
                 //map.put(MDC_ATTR_NAME, mdc);  // this is what JsonLayout does with MDC
             }
