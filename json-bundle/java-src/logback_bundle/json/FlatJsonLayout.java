@@ -20,9 +20,14 @@ public class FlatJsonLayout extends JsonLayout {
     private final ThrowableProxyConverter throwableProxyConverter;
 
     private static volatile ValueDecoder decoder = ValueDecoder.NOP;
+    private static volatile MapTransformer xformer = MapTransformer.NOP;
 
     public static void setGlobalDecoder(ValueDecoder valueDecoder) {
         decoder = valueDecoder;
+    }
+
+    public static void setGlobalTransformer(MapTransformer mapTransformer) {
+        xformer = mapTransformer;
     }
 
     public FlatJsonLayout() {
@@ -107,7 +112,7 @@ public class FlatJsonLayout extends JsonLayout {
             }
         }
 
-        return map;
+        return xformer.transform(map);
     }
 
 }
