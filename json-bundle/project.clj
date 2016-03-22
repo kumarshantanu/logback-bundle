@@ -1,4 +1,4 @@
-(defproject logback-bundle/json-bundle "0.2.1"
+(defproject logback-bundle/json-bundle "0.2.2"
   :description "Core and JSON Logback dependencies bundle"
   :url "https://github.com/kumarshantanu/logback-bundle"
   :license {:name "Eclipse Public License"
