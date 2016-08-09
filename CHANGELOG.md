@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 
 
+## [0.2.3] - 2016-August-??
+
+- [TODO] Start throwable-proxy-converter in `logback_bundle.json.FlatJsonLayout`
+
+
 ## [0.2.2] - 2016-March-22
 
 - Allow `logback_bundle.json.FlatJsonlayout` to set a global MDC transformer
