@@ -7,7 +7,8 @@ All notable changes to this project will be documented in this file.
 - Update dependencies
   - `logback-classic`, `logback-core` from `1.1.6` to `1.1.7`
   - `logback-json-classic`, `logback-jackson` from `0.1.2` to `0.1.5`
-- [TODO] Start throwable-proxy-converter in `logback_bundle.json.FlatJsonLayout`
+- In `logback_bundle.json.FlatJsonLayout` use throwable-proxy-converter from
+  the base class, thereby preserving correct lifecycle behavior
 
 
 ## [0.2.2] - 2016-March-22

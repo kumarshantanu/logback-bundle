@@ -5,7 +5,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import ch.qos.logback.classic.Level;
-import ch.qos.logback.classic.pattern.ThrowableProxyConverter;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.classic.spi.IThrowableProxy;
 import ch.qos.logback.contrib.json.classic.JsonLayout;
@@ -17,8 +16,6 @@ import ch.qos.logback.contrib.json.classic.JsonLayout;
  */
 public class FlatJsonLayout extends JsonLayout {
 
-    private final ThrowableProxyConverter throwableProxyConverter;
-
     private static volatile ValueDecoder decoder = ValueDecoder.NOP;
     private static volatile MapTransformer xformer = MapTransformer.NOP;
 
@@ -28,10 +25,6 @@ public class FlatJsonLayout extends JsonLayout {
 
     public static void setGlobalTransformer(MapTransformer mapTransformer) {
         xformer = mapTransformer;
-    }
-
-    public FlatJsonLayout() {
-        this.throwableProxyConverter = new ThrowableProxyConverter();
     }
 
     @Override
@@ -105,7 +98,7 @@ public class FlatJsonLayout extends JsonLayout {
         if (this.includeException) {
             IThrowableProxy throwableProxy = event.getThrowableProxy();
             if (throwableProxy != null) {
-                String ex = throwableProxyConverter.convert(event);
+                String ex = getThrowableProxyConverter().convert(event);
                 if (ex != null && !ex.equals("")) {
                     map.put(EXCEPTION_ATTR_NAME, ex);
                 }
