@@ -19,8 +19,8 @@ Include the artifacts in your Leiningen/Gradle/SBT/Maven project.
 
 | Leiningen artifact                     | Description                                  |
 |----------------------------------------|----------------------------------------------|
-| `[logback-bundle/core-bundle "0.2.2"]` | Core Logback dependencies                    |
-| `[logback-bundle/json-bundle "0.2.2"]` | Logback Core+JSON dependencies using Jackson |
+| `[logback-bundle/core-bundle "0.2.3"]` | Core Logback dependencies                    |
+| `[logback-bundle/json-bundle "0.2.3"]` | Logback Core+JSON dependencies using Jackson |
 
 
 #### Clojars

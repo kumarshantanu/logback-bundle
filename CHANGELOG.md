@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 
-## [0.2.3] - 2016-August-??
+## [0.2.3] - 2016-August-09
 
 - Update dependencies
   - `logback-classic`, `logback-core` from `1.1.6` to `1.1.7`

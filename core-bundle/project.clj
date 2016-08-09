@@ -1,4 +1,4 @@
-(defproject logback-bundle/core-bundle "0.2.3-SNAPSHOT"
+(defproject logback-bundle/core-bundle "0.2.3"
   :description "Core Logback dependencies bundle"
   :url "https://github.com/kumarshantanu/logback-bundle"
   :license {:name "Eclipse Public License"
@@ -11,7 +11,7 @@
   :global-vars {*warn-on-reflection* true
                 *unchecked-math* :warn-on-boxed}
   :profiles {:dev {:dependencies [[org.clojure/clojure "1.8.0"]
-                                  [cambium             "0.3.0"]
+                                  [cambium             "0.4.0"]
                                   ;;[org.slf4j/slf4j-api "1.7.12"]
                                   ]
                    :jvm-opts ["-Denable.dummy=true"]}})
