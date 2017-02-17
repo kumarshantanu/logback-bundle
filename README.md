@@ -19,8 +19,8 @@ Include the artifacts in your Leiningen/Gradle/SBT/Maven project.
 
 | Leiningen artifact                     | Description                                  |
 |----------------------------------------|----------------------------------------------|
-| `[logback-bundle/core-bundle "0.2.3"]` | Core Logback dependencies                    |
-| `[logback-bundle/json-bundle "0.2.3"]` | Logback Core+JSON dependencies using Jackson |
+| `[logback-bundle/core-bundle "0.2.4"]` | Core Logback dependencies                    |
+| `[logback-bundle/json-bundle "0.2.4"]` | Logback Core+JSON dependencies using Jackson |
 
 
 #### Clojars
@@ -93,7 +93,7 @@ replace `ch.qos.logback.contrib.json.classic.JsonLayout` with
 
 ## License
 
-Copyright © 2015-2016 Shantanu Kumar (kumar.shantanu@gmail.com, shantanu.kumar@concur.com)
+Copyright © 2015-2017 Shantanu Kumar (kumar.shantanu@gmail.com, shantanu.kumar@concur.com)
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.

@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 
-## [WIP] 0.2.4 / 2017-February-??
+## 0.2.4 / 2017-February-17
 
 - Update dependencies
   - `janino` from `2.7.8` to `3.0.6`
