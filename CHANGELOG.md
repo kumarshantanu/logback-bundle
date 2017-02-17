@@ -5,9 +5,9 @@ All notable changes to this project will be documented in this file.
 ## [WIP] 0.2.4 / 2017-February-??
 
 - Update dependencies
-  - [TODO] `janino` from `2.7.8` to `3.0.6`
-  - [TODO] `logback-classic`, `logback-core` from `1.1.7` to `1.2.1`
-  - [TODO] `jackson-core`, `jackson-databind` from `2.5.3` to `2.8.6`
+  - `janino` from `2.7.8` to `3.0.6`
+  - `logback-classic`, `logback-core` from `1.1.7` to `1.2.1`
+  - `jackson-core`, `jackson-databind` from `2.5.3` to `2.8.6`
 
 
 ## 0.2.3 / 2016-August-09
