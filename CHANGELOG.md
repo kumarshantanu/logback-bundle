@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file.
 
 
+## [TODO] 0.3.0 / 2017-April-??
+
+- Update dependencies
+  - [TODO] org.codehaus.janino from `3.0.6` to `3.0.7`
+  - [TODO] logback-classic, logback-core from `1.2.1` to `1.2.3`
+- [TODO] Core: Log level override utility fns in the `logback-bundle.core` namespace
+- [TODO] Json: Initializer utility fns in `logback-bundle.json` namespace
+
+
 ## 0.2.4 / 2017-February-17
 
 - Update dependencies
