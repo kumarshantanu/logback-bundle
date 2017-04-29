@@ -13,6 +13,5 @@
   :global-vars {*warn-on-reflection* true
                 *unchecked-math* :warn-on-boxed}
   :profiles {:dev {:dependencies [[org.clojure/clojure "1.8.0"]
-                                  [cambium             "0.8.1"]
-                                  ;;[org.slf4j/slf4j-api "1.7.22"]
-                                  ]}})
+                                  [org.slf4j/slf4j-api "1.7.25"]
+                                  [org.clojure/tools.logging "0.3.1" :exclusions [org.clojure/clojure]]]}})
