@@ -38,6 +38,12 @@
      (format "<<%s:%3d>> %s" (:file-name m#) (:line-number m#) ~x)))
 
 
+(deftest test-simple-log
+  (testing "Simple test"
+    (println "System property 'enable.dummy' =" (System/getProperty "enable.dummy"))
+    (log/info (line "This is a test log."))))
+
+
 (deftest test-mdc-level-override
   (log/info (line "Info message - no override - this log message should appear"))
   (log/debug (line "Debug message - no override - this log message should NOT appear"))
@@ -68,5 +74,6 @@
 
 (defn test-ns-hook
   []
+  (test-simple-log)
   (test-mdc-level-override)
   (test-multi-level-override))
