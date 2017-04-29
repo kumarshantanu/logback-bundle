@@ -10,19 +10,15 @@
 (ns logback-bundle.json.basic-layout-test
   (:require
     [clojure.test :refer :all]
-    [cambium.core :as log])
-  (:import
-    [org.slf4j MDC]))
+    [cambium.core :as log]))
 
 
 (deftest a-test
   (testing "Simple test"
-    (MDC/put "foo" "bar")
-    (MDC/put "baz" "qux")
-    (log/info "hello")))
+    (log/info {"foo" "bar"
+               "baz" "qux"} "hello")))
 
 
 (deftest e-test
   (testing "Exception"
-    (MDC/put "x" "y")
-    (log/error {} (RuntimeException. "Exception happened") "Testing exception")))
+    (log/error {"x" "y"} (RuntimeException. "Exception happened") "Testing exception")))
