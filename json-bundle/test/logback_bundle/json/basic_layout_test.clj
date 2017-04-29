@@ -7,10 +7,12 @@
 ;   You must not remove this notice, or any other, from this software.
 
 
-(ns json-bundle.core-test
-  (:require [clojure.test :refer :all]
-            [clojure.tools.logging :as log])
-  (:import [org.slf4j MDC]))
+(ns logback-bundle.json.basic-layout-test
+  (:require
+    [clojure.test :refer :all]
+    [cambium.core :as log])
+  (:import
+    [org.slf4j MDC]))
 
 
 (deftest a-test
