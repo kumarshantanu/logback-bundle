@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 
-## [TODO] 0.3.0 / 2017-April-??
+## 0.3.0 / 2017-April-30
 
 - Update dependencies
   - `org.codehaus.janino` from `3.0.6` to `3.0.7`
@@ -51,4 +51,3 @@ All notable changes to this project will be documented in this file.
 - Core bundle
 - JSON bundle
 - Flat JSON layout
-
